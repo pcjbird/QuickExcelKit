@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     s.header_mappings_dir = './'
     s.dependency 'SSZipArchive'
     s.default_subspec = 'QuickExcelReaderUtil'
-    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include/libxls ${PODS_ROOT}/QuickExcelKit/ZXLSXReader ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/xmlParser ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/xmlParser/models' }
+    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include/libxls ${PODS_ROOT}/QuickExcelKit/ZXLSXReader ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models' }
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
         ss.source_files = 'QuickExcelKit/QuickExcelKit.h', 'QuickExcelKit/QuickExcelKitDefine.h', 'QuickExcelKit/QuickExcelReaderUtil.h', 'QuickExcelKit/QuickExcelReaderUtil.m', 'QuickExcelKit/CSVParser', 'QuickExcelKit/Supporting Files', '${PODS_ROOT}/QuickExcelKit/DHlibxls/*.{h}', '${PODS_ROOT}/QuickExcelKit/DHlibxls/DHxlsReader/*.{h,m}', '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include/libxls/*.{h}', '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/src/*.{c}', '${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', '${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
