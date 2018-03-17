@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
     s.version          = "1.0.0"
     s.summary          = "A great & strong microsoft excel parser for iOS, support csv/xls/xlsx format. 一款微软 Excel 文件解析器，支持 csv/xls/xlsx 格式。"
     s.description      = <<-DESC
-    A great & strong microsoft excel parser for iOS, support csv/xls/xlsx format. 一款 iOS 平台上的微软 Excel 文件解析器，支持 csv/xls/xlsx 格式, 该项目支持 Cocoapods 的 subspec。
+    A great & strong microsoft excel parser for iOS, support csv/xls/xlsx format. 一款 iOS 上的微软 Excel 文件解析器，支持 csv/xls/xlsx 格式, 该项目支持 Cocoapods 的 subspec。
     DESC
     s.homepage         = "https://github.com/pcjbird/QuickExcelKit"
     s.license          = 'MIT'
