@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 #s.preserve_paths   = ''
     s.source_files     = 'QuickExcelKit/QuickExcelKit.h'
     s.prefix_header_file = 'QuickExcelKit/Supporting Files/QuickExcelKit-Prefix.pch'
+    s.header_mappings_dir = './'
     s.dependency 'SSZipArchive'
     s.default_subspec = 'QuickExcelReaderUtil'
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => '(./DHlibxls/libxls,./DHlibxls/libxls/include,./DHlibxls/libxls/include/libxls,./ZXLSXReader,./ZXLSXReader/xmlParser,./ZXLSXReader/xmlParser/models,)' }
