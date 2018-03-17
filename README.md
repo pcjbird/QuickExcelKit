@@ -7,3 +7,4 @@
 [![GitHub release](https://img.shields.io/github/release/pcjbird/QuickExcelKit.svg)](https://github.com/pcjbird/QuickExcelKit/releases)
 
 # QuickExcelKit
+### A great & strong microsoft excel parser for iOS, support csv/xls/xlsx format. 一款微软 Excel 文件解析器，支持 csv/xls/xlsx 格式。
