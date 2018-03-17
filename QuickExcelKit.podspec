@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.homepage         = "https://github.com/pcjbird/QuickExcelKit"
     s.license          = 'MIT'
     s.author           = {"pcjbird" => "pcjbird@hotmail.com"}
-    s.source           = {:git => "https://github.com/pcjbird/QuickExcelKit.git", :tag => s.version.to_s}
+    s.source           = {:git => "https://github.com/pcjbird/QuickExcelKit.git", :tag => s.version.to_s, :submodules => true}
     s.social_media_url = 'http://www.lessney.com'
     s.requires_arc     = true
     s.documentation_url = 'https://github.com/pcjbird/QuickExcelKit/blob/master/README.md'
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
     s.frameworks       = 'Foundation', 'UIKit'
 #s.preserve_paths   = ''
     s.source_files     = 'QuickExcelKit/QuickExcelKit.h'
-
+    s.prefix_header_file = 'QuickExcelKit/Supporting Files/QuickExcelKit-Prefix.pch'
     s.dependency 'SSZipArchive'
-
-s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => '(./DHlibxls/libxls,./DHlibxls/libxls/include,./DHlibxls/libxls/include/libxls,./ZXLSXReader,./ZXLSXReader/xmlParser,./ZXLSXReader/xmlParser/models,)' }
+    s.default_subspec = 'QuickExcelReaderUtil'
+    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => '(./DHlibxls/libxls,./DHlibxls/libxls/include,./DHlibxls/libxls/include/libxls,./ZXLSXReader,./ZXLSXReader/xmlParser,./ZXLSXReader/xmlParser/models,)' }
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
         ss.source_files = 'QuickExcelKit/QuickExcelKit.h', 'QuickExcelKit/QuickExcelKitDefine.h', 'QuickExcelKit/QuickExcelReaderUtil.h', 'QuickExcelKit/QuickExcelReaderUtil.m', 'QuickExcelKit/CSVParser', 'QuickExcelKit/Supporting Files', 'DHlibxls/*.{h}', 'DHlibxls/DHxlsReader/*.{h,m}', 'DHlibxls/libxls/include/libxls/*.{h}', 'DHlibxls/libxls/src/*.{c}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
