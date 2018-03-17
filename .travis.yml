@@ -17,8 +17,6 @@ before_install:
     - pod repo remove master
     - pod setup --silent > /dev/null
     - pod repo update --silent
-    #- git submodule foreach --recursive git submodule init 
-    #- git submodule foreach --recursive git submodule update 
     - xcpretty --version
     - xcodebuild -version
     - xcodebuild -showsdks
