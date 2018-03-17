@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <QuickExcelKit/ZContent.h>
+#import "ZContent.h"
 
 typedef void (^QuickExcelReaderBlock)(NSDictionary<NSString*, NSArray<ZContent*>*>* results, NSError* error);
 
