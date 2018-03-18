@@ -6,6 +6,20 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		896C612E205EBEAC00706F6B /* QuickExcelKit-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 896C6131205EBEAC00706F6B /* Build configuration list for PBXAggregateTarget "QuickExcelKit-Universal" */;
+			buildPhases = (
+				896C6132205EBEB300706F6B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "QuickExcelKit-Universal";
+			productName = "QuickExcelKit-Universal";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		896C6000205CB5B200706F6B /* QuickExcelKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C5FFE205CB5B200706F6B /* QuickExcelKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		896C603D205D0A0700706F6B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C600B205D0A0700706F6B /* config.h */; };
@@ -403,6 +417,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					896C612E205EBEAC00706F6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 896C5FF5205CB5B200706F6B /* Build configuration list for PBXProject "QuickExcelKit" */;
@@ -419,6 +437,7 @@
 			projectRoot = "";
 			targets = (
 				896C5FFA205CB5B200706F6B /* QuickExcelKit */,
+				896C612E205EBEAC00706F6B /* QuickExcelKit-Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -448,6 +467,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickExcelKit/Pods-QuickExcelKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		896C6132205EBEB300706F6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=${PRODUCT_NAME}\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root folder of the current project.\n\nINSTALL_DIR=${SRCROOT}/products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -workspace \"${FMK_NAME}\".xcworkspace -scheme \"${FMK_NAME}\" -configuration \"Release\" -sdk iphoneos clean build\n\nxcodebuild -workspace \"${FMK_NAME}\".xcworkspace -scheme \"${FMK_NAME}\" -configuration \"Release\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
 		};
 		C54890A3C3C8C6155C99C68C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -670,6 +702,22 @@
 			};
 			name = Release;
 		};
+		896C612F205EBEAC00706F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = QuickExcelKit;
+			};
+			name = Debug;
+		};
+		896C6130205EBEAC00706F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = QuickExcelKit;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -687,6 +735,15 @@
 			buildConfigurations = (
 				896C6004205CB5B200706F6B /* Debug */,
 				896C6005205CB5B200706F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896C6131205EBEAC00706F6B /* Build configuration list for PBXAggregateTarget "QuickExcelKit-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896C612F205EBEAC00706F6B /* Debug */,
+				896C6130205EBEAC00706F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

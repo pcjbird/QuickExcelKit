@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
         ss.public_header_files = 'QuickExcelKit/QuickExcelKit.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h', 'QuickExcelKit/QuickExcelReaderUtil.h'
         ss.pod_target_xcconfig = {
         'OTHER_LDFLAGS' => '-lObjC',
-        'HEADER_SEARCH_PATHS' => '$(inherited) ./DHlibxls/libxls ./DHlibxls/libxls/include ./DHlibxls/libxls/include/libxls ./ZXLSXReader ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models'
+        'HEADER_SEARCH_PATHS' => '$(inherited) ./DHlibxls/libxls ./DHlibxls/libxls/include ./ZXLSXReader ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models'
         }
     end
 
