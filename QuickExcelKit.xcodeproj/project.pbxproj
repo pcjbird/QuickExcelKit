@@ -51,6 +51,7 @@
 		896C611B205D262700706F6B /* QuickExcelKitDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C611A205D255F00706F6B /* QuickExcelKitDefine.h */; };
 		896C6126205D44AA00706F6B /* CSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6124205D44AA00706F6B /* CSVParser.h */; };
 		896C6127205D44AA00706F6B /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C6125205D44AA00706F6B /* CSVParser.m */; };
+		896C612D205EB30900706F6B /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 896C612C205EB30800706F6B /* endian.c */; };
 		D4E681D6766BB5BB172D8DF6 /* Pods_QuickExcelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28514E202479672F3ED02ED3 /* Pods_QuickExcelKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		896C6125205D44AA00706F6B /* CSVParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
 		896C6128205D4A7500706F6B /* QuickExcelKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuickExcelKit.podspec; sourceTree = "<group>"; };
 		896C6129205D4A7500706F6B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		896C612C205EB30800706F6B /* endian.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = endian.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 		896C60E7205D16E000706F6B /* src */ = {
 			isa = PBXGroup;
 			children = (
+				896C612C205EB30800706F6B /* endian.c */,
 				896C60E9205D16E000706F6B /* getopt.c */,
 				896C60EC205D16E000706F6B /* ole.c */,
 				896C60ED205D16E000706F6B /* xls.c */,
@@ -481,6 +484,7 @@
 				896C60F1205D16E100706F6B /* getopt.c in Sources */,
 				896C60D6205D0B7D00706F6B /* ZSheet.m in Sources */,
 				896C60E0205D0B7D00706F6B /* ZWorkbookParser.m in Sources */,
+				896C612D205EB30900706F6B /* endian.c in Sources */,
 				896C6127205D44AA00706F6B /* CSVParser.m in Sources */,
 				896C60E2205D0B7D00706F6B /* ZXLSXParser.m in Sources */,
 				896C60DA205D0B7D00706F6B /* ZBaseParser.m in Sources */,

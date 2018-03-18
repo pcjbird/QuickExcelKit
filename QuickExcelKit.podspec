@@ -26,10 +26,11 @@ Pod::Spec.new do |s|
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
         ss.source_files = 'QuickExcelKit/QuickExcelKit.h', 'QuickExcelKit/QuickExcelKitDefine.h', 'QuickExcelKit/QuickExcelReaderUtil.h', 'QuickExcelKit/QuickExcelReaderUtil.m', 'QuickExcelKit/CSVParser', 'QuickExcelKit/Supporting Files', 'DHlibxls/*.{h}', 'DHlibxls/DHxlsReader/*.{h,m}', 'DHlibxls/libxls/include/libxls/*.{h}', 'DHlibxls/libxls/src/*.{c}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
+        ss.exclude_files = 'DHlibxls/libxls/src/endian.c'
         ss.public_header_files = 'QuickExcelKit/QuickExcelKit.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h', 'QuickExcelKit/QuickExcelReaderUtil.h'
         ss.pod_target_xcconfig = {
         'OTHER_LDFLAGS' => '-lObjC',
-        'USER_HEADER_SEARCH_PATHS' => '$(inherited) ./DHlibxls/libxls ./DHlibxls/libxls/include ./DHlibxls/libxls/include/libxls ./ZXLSXReader ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models'
+        'HEADER_SEARCH_PATHS' => '$(inherited) ./DHlibxls/libxls ./DHlibxls/libxls/include ./DHlibxls/libxls/include/libxls ./ZXLSXReader ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models'
         }
     end
 

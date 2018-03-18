@@ -1,6 +1,3 @@
-[submodule "DHlibxls"]
-	path = DHlibxls
-	url = https://github.com/dhoerl/DHlibxls.git
 [submodule "ZXLSXReader"]
 	path = ZXLSXReader
 	url = https://github.com/zjn147/ZXLSXReader.git
