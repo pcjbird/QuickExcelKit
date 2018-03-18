@@ -25,9 +25,11 @@ Pod::Spec.new do |s|
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include/libxls ${PODS_ROOT}/QuickExcelKit/ZXLSXReader ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models' }
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
-        ss.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include ${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include/libxls ${PODS_ROOT}/QuickExcelKit/ZXLSXReader ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models' }
-        ss.source_files = 'QuickExcelKit/QuickExcelKit.h', 'QuickExcelKit/QuickExcelKitDefine.h', 'QuickExcelKit/QuickExcelReaderUtil.h', 'QuickExcelKit/QuickExcelReaderUtil.m', 'QuickExcelKit/CSVParser', 'QuickExcelKit/Supporting Files', '${PODS_ROOT}/QuickExcelKit/DHlibxls/*.{h}', '${PODS_ROOT}/QuickExcelKit/DHlibxls/DHxlsReader/*.{h,m}', '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/include/libxls/*.{h}', '${PODS_ROOT}/QuickExcelKit/DHlibxls/libxls/src/*.{c}', '${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', '${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
-        ss.public_header_files = 'QuickExcelKit/QuickExcelKit.h','${PODS_ROOT}/QuickExcelKit/ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h', 'QuickExcelKit/QuickExcelReaderUtil.h'
+        ss.source_files = 'QuickExcelKit/QuickExcelKit.h', 'QuickExcelKit/QuickExcelKitDefine.h', 'QuickExcelKit/QuickExcelReaderUtil.h', 'QuickExcelKit/QuickExcelReaderUtil.m', 'QuickExcelKit/CSVParser', 'QuickExcelKit/Supporting Files', 'DHlibxls/*.{h}', 'DHlibxls/DHxlsReader/*.{h,m}', 'DHlibxls/libxls/include/libxls/*.{h}', 'DHlibxls/libxls/src/*.{c}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
+        ss.public_header_files = 'QuickExcelKit/QuickExcelKit.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h', 'QuickExcelKit/QuickExcelReaderUtil.h'
+        ss.xcconfig = {
+        'USER_HEADER_SEARCH_PATHS' => '$(inherited) ./DHlibxls/libxls ./DHlibxls/libxls/include ./DHlibxls/libxls/include/libxls ./ZXLSXReader ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models'
+        }
     end
 
 end
