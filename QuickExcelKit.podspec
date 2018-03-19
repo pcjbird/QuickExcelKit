@@ -26,13 +26,13 @@ Pod::Spec.new do |s|
 
     s.subspec 'ZXLSXParser' do |ss|
        ss.source_files = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
-       ss.public_headerfiles = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/ZXLSXParser.h'
+       ss.public_header_files = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/ZXLSXParser.h'
        ss.dependency 'SSZipArchive'
     end
 
     s.subspec 'iOSlibxls' do |ss|
         ss.source_files = 'iOSlibxls/*.{h,m}', 'iOSlibxls/libxls/include/libxls/*.{h}', 'iOSlibxls/src/*.{c}'
-        ss.public_headerfiles = 'iOSlibxls/libxls/include/libxls/xls.h'
+        ss.public_header_files = 'iOSlibxls/libxls/include/libxls/xls.h'
         ss.header_dir = 'iOSlibxls'
         ss.header_mappings_dir = 'iOSlibxls/libxls/include'
         ss.pod_target_xcconfig = {
