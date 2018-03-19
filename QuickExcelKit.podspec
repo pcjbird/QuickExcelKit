@@ -32,13 +32,11 @@ Pod::Spec.new do |s|
 
     s.subspec 'iOSlibxls' do |ss|
         ss.source_files = 'iOSlibxls/*.{h,m}', 'iOSlibxls/libxls/include/libxls/*.{h}', 'iOSlibxls/src/*.{c}'
-        ss.public_header_files = 'iOSlibxls/libxls/include/libxls/xls.h'
-        ss.header_dir = 'iOSlibxls'
-        ss.header_mappings_dir = 'iOSlibxls/libxls/include'
+        ss.public_header_files = 'iOSlibxls/iOSXLSReader.h','iOSlibxls/iOSXLSCell.h'
+        ss.header_mappings_dir = 'iOSlibxls'
         ss.pod_target_xcconfig = {
             'HEADER_SEARCH_PATHS' => '$(inherited) ./iOSlibxls ./iOSlibxls/libxls/incude'
         }
-        ss.dependency 'QuickExcelKit/ZXLSXParser'
     end
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
