@@ -24,13 +24,13 @@ Pod::Spec.new do |s|
 
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC'}
 
-    s.subspec 'ZXLSXParser' do |SS|
+    s.subspec 'ZXLSXParser' do |ss|
        ss.source files = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
        ss.public_headerfiles = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/ZXLSXParser.h'
        ss.dependency 'SSZipArchive'
-    @end
+    end
 
-    s.subspec 'iOSlibxls' do |SS|
+    s.subspec 'iOSlibxls' do |ss|
         ss.source files = 'iOSlibxls/*.{h,m}', 'iOSlibxls/libxls/include/libxls/*.{h}', 'iOSlibxls/src/*.{c}'
         ss.public_headerfiles = 'iOSlibxls/libxls/include/libxls/xls.h'
         ss.header_dir = 'iOSlibxls'
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
             'HEADER_SEARCH_PATHS' => '$(inherited) ./iOSlibxls ./iOSlibxls/libxls/incude'
         }
         ss.dependency 'QuickExcelKit/ZXLSXParser'
-    @end
+    end
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
         ss.source_files = 'QuickExcelKit/*.{h,m}', 'QuickExcelKit/CSVParser/*.{h,m}', 'QuickExcelKit/Supporting Files/*.{pch}'
