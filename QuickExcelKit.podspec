@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
         ss.source_files = 'QuickExcelKit/*.{h,m}', 'QuickExcelKit/CSVParser/*.{h,m}'
-        ss.public_header_files = 'QuickExcelKit/QuickExcelReaderUtil.h'
+        ss.public_header_files = 'QuickExcelKit/QuickExcelKit.h', 'QuickExcelKit/QuickExcelReaderUtil.h'
         ss.dependency 'QuickExcelKit/ZXLSXParser'
         ss.dependency 'QuickExcelKit/iOSlibxls'
     end
