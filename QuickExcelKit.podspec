@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
     s.subspec 'iOSlibxls' do |ss|
         ss.source_files = 'iOSlibxls/*.{h,m}', 'iOSlibxls/libxls/include/libxls/*.{h}', 'iOSlibxls/src/*.{c}'
         ss.public_header_files = 'iOSlibxls/iOSXLSReader.h','iOSlibxls/iOSXLSCell.h'
+        ss.header_dir = 'iOSlibxls/libxls/include'
         ss.header_mappings_dir = 'iOSlibxls'
         ss.pod_target_xcconfig = {
             'HEADER_SEARCH_PATHS' => '$(inherited) ./iOSlibxls ./iOSlibxls/libxls/incude'
@@ -40,7 +41,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
-        ss.source_files = 'QuickExcelKit/*.{h,m}', 'QuickExcelKit/CSVParser/*.{h,m}', 'QuickExcelKit/Supporting Files/*.{pch}'
+        ss.source_files = 'QuickExcelKit/*.{h,m}', 'QuickExcelKit/CSVParser/*.{h,m}'
         ss.public_header_files = 'QuickExcelKit/QuickExcelReaderUtil.h'
         ss.dependency 'QuickExcelKit/ZXLSXParser'
         ss.dependency 'QuickExcelKit/iOSlibxls'
