@@ -1,3 +1,6 @@
 [submodule "ZXLSXReader"]
 	path = ZXLSXReader
 	url = https://github.com/zjn147/ZXLSXReader.git
+[submodule "iOSlibxls/libxls"]
+	path = iOSlibxls/libxls
+	url = https://github.com/JanX2/libxls.git

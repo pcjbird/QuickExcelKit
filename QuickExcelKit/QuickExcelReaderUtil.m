@@ -8,7 +8,7 @@
 
 #import "QuickExcelReaderUtil.h"
 #import "QuickExcelKitDefine.h"
-#import "DHxlsReader.h"
+#import "iOSXLSReader.h"
 #import "CSVParser.h"
 #import "ZXLSXParser.h"
 
@@ -94,8 +94,8 @@ static QuickExcelReaderUtil *_sharedUtil = nil;
 
 -(void)parserExcel_XLS_WithPath:(NSString *)filePath complete:(QuickExcelReaderBlock)block
 {
-    DHxlsReader *reader = [DHxlsReader xlsReaderWithPath:filePath];
-    if(![reader isKindOfClass:[DHxlsReader class]])
+    iOSXLSReader *reader = [iOSXLSReader xlsReaderWithPath:filePath];
+    if(![reader isKindOfClass:[iOSXLSReader class]])
     {
         NSString *errorString = [NSString stringWithFormat:@"读取 Excel: %@ 失败。", [filePath lastPathComponent]];
         if(block)block(nil, QUICKEXCELKIT_ERROR(1000, errorString));
@@ -116,7 +116,7 @@ static QuickExcelReaderUtil *_sharedUtil = nil;
             {
                 unichar ch =64 + c;
                 NSString *str =[NSString stringWithUTF8String:(char *)&ch];
-                DHcell *cell = [reader cellInWorkSheetIndex:i row:r col:c];
+                iOSXLSCell *cell = [reader cellInWorkSheetIndex:i row:r col:c];
                 ZContent *content = [[ZContent alloc] init];
                 content.sheetName = [reader sheetNameAtIndex:i];
                 content.keyName = [NSString stringWithFormat: @"%@%d", str,c+r-1];

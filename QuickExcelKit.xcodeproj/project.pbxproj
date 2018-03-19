@@ -22,12 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		896C6000205CB5B200706F6B /* QuickExcelKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C5FFE205CB5B200706F6B /* QuickExcelKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		896C603D205D0A0700706F6B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C600B205D0A0700706F6B /* config.h */; };
-		896C603F205D0A0700706F6B /* DHcell-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C600E205D0A0700706F6B /* DHcell-Private.h */; };
-		896C6040205D0A0700706F6B /* DHcell.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C600F205D0A0700706F6B /* DHcell.h */; };
-		896C6041205D0A0700706F6B /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C6010205D0A0700706F6B /* DHcell.m */; };
-		896C6043205D0A0700706F6B /* DHxlsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6012205D0A0700706F6B /* DHxlsReader.h */; };
-		896C6044205D0A0700706F6B /* DHxlsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C6013205D0A0700706F6B /* DHxlsReader.m */; };
 		896C60D1205D0B7D00706F6B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C608A205D0B7D00706F6B /* config.h */; };
 		896C60D2205D0B7D00706F6B /* ZContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C608C205D0B7D00706F6B /* ZContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		896C60D3205D0B7D00706F6B /* ZContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C608D205D0B7D00706F6B /* ZContent.m */; };
@@ -46,26 +40,30 @@
 		896C60E0205D0B7D00706F6B /* ZWorkbookParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C609A205D0B7D00706F6B /* ZWorkbookParser.m */; };
 		896C60E1205D0B7D00706F6B /* ZXLSXParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C609B205D0B7D00706F6B /* ZXLSXParser.h */; };
 		896C60E2205D0B7D00706F6B /* ZXLSXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C609C205D0B7D00706F6B /* ZXLSXParser.m */; };
-		896C60F1205D16E100706F6B /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 896C60E9205D16E000706F6B /* getopt.c */; };
-		896C60F4205D16E100706F6B /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = 896C60EC205D16E000706F6B /* ole.c */; };
-		896C60F5205D16E100706F6B /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = 896C60ED205D16E000706F6B /* xls.c */; };
-		896C60F6205D16E100706F6B /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = 896C60EE205D16E000706F6B /* xls2csv.c */; };
-		896C60F7205D16E100706F6B /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = 896C60EF205D16E000706F6B /* xlstool.c */; };
-		896C6106205D174500706F6B /* brdb.c.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C60FA205D174500706F6B /* brdb.c.h */; };
-		896C6107205D174500706F6B /* brdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C60FB205D174500706F6B /* brdb.h */; };
-		896C6108205D174500706F6B /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C60FC205D174500706F6B /* endian.h */; };
-		896C610B205D174500706F6B /* ole.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C60FF205D174500706F6B /* ole.h */; };
-		896C610C205D174500706F6B /* xls.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6100205D174500706F6B /* xls.h */; };
-		896C610D205D174500706F6B /* xlsstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6101205D174500706F6B /* xlsstruct.h */; };
-		896C610E205D174500706F6B /* xlstool.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6102205D174500706F6B /* xlstool.h */; };
-		896C610F205D174500706F6B /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6103205D174500706F6B /* xlstypes.h */; };
 		896C6113205D178B00706F6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896C6112205D178B00706F6B /* Foundation.framework */; };
 		896C6118205D208500706F6B /* QuickExcelReaderUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6116205D208500706F6B /* QuickExcelReaderUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		896C6119205D208500706F6B /* QuickExcelReaderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C6117205D208500706F6B /* QuickExcelReaderUtil.m */; };
 		896C611B205D262700706F6B /* QuickExcelKitDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C611A205D255F00706F6B /* QuickExcelKitDefine.h */; };
 		896C6126205D44AA00706F6B /* CSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 896C6124205D44AA00706F6B /* CSVParser.h */; };
 		896C6127205D44AA00706F6B /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C6125205D44AA00706F6B /* CSVParser.m */; };
-		896C612D205EB30900706F6B /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 896C612C205EB30800706F6B /* endian.c */; };
+		89787F21205F67D8005883F1 /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EE3205F67D8005883F1 /* endian.h */; };
+		89787F22205F67D8005883F1 /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EE4205F67D8005883F1 /* xlstypes.h */; };
+		89787F23205F67D8005883F1 /* xlsstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EE5205F67D8005883F1 /* xlsstruct.h */; };
+		89787F24205F67D8005883F1 /* brdb.c.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EE6205F67D8005883F1 /* brdb.c.h */; };
+		89787F26205F67D8005883F1 /* xlstool.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EE8205F67D8005883F1 /* xlstool.h */; };
+		89787F27205F67D8005883F1 /* xls.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EE9205F67D8005883F1 /* xls.h */; };
+		89787F28205F67D8005883F1 /* ole.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EEA205F67D8005883F1 /* ole.h */; };
+		89787F2A205F67D8005883F1 /* brdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787EEC205F67D8005883F1 /* brdb.h */; };
+		89787F42205F67D8005883F1 /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = 89787F09205F67D8005883F1 /* xls.c */; };
+		89787F43205F67D8005883F1 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = 89787F0A205F67D8005883F1 /* xlstool.c */; };
+		89787F44205F67D8005883F1 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = 89787F0B205F67D8005883F1 /* ole.c */; };
+		89787F46205F67D8005883F1 /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = 89787F0D205F67D8005883F1 /* xls2csv.c */; };
+		89787F47205F67D8005883F1 /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 89787F0E205F67D8005883F1 /* endian.c */; };
+		89787F49205F67D8005883F1 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 89787F10205F67D8005883F1 /* getopt.c */; };
+		89787F50205F6A7B005883F1 /* iOSXLSReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787F4E205F6A7B005883F1 /* iOSXLSReader.h */; };
+		89787F51205F6A7B005883F1 /* iOSXLSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89787F4F205F6A7B005883F1 /* iOSXLSReader.m */; };
+		89787F54205F6AB8005883F1 /* iOSXLSCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 89787F52205F6AB8005883F1 /* iOSXLSCell.h */; };
+		89787F55205F6AB8005883F1 /* iOSXLSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89787F53205F6AB8005883F1 /* iOSXLSCell.m */; };
 		D4E681D6766BB5BB172D8DF6 /* Pods_QuickExcelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28514E202479672F3ED02ED3 /* Pods_QuickExcelKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,12 +74,6 @@
 		896C5FFB205CB5B200706F6B /* QuickExcelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickExcelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		896C5FFE205CB5B200706F6B /* QuickExcelKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickExcelKit.h; sourceTree = "<group>"; };
 		896C5FFF205CB5B200706F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		896C600B205D0A0700706F6B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		896C600E205D0A0700706F6B /* DHcell-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
-		896C600F205D0A0700706F6B /* DHcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
-		896C6010205D0A0700706F6B /* DHcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
-		896C6012205D0A0700706F6B /* DHxlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxlsReader.h; sourceTree = "<group>"; };
-		896C6013205D0A0700706F6B /* DHxlsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHxlsReader.m; sourceTree = "<group>"; };
 		896C608A205D0B7D00706F6B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		896C608C205D0B7D00706F6B /* ZContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZContent.h; sourceTree = "<group>"; };
 		896C608D205D0B7D00706F6B /* ZContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZContent.m; sourceTree = "<group>"; };
@@ -102,19 +94,6 @@
 		896C609C205D0B7D00706F6B /* ZXLSXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLSXParser.m; sourceTree = "<group>"; };
 		896C609D205D0B7D00706F6B /* ZXLSXParsers注解.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZXLSXParsers注解.m"; sourceTree = "<group>"; };
 		896C60E5205D0CE600706F6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		896C60E9205D16E000706F6B /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
-		896C60EC205D16E000706F6B /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
-		896C60ED205D16E000706F6B /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
-		896C60EE205D16E000706F6B /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
-		896C60EF205D16E000706F6B /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
-		896C60FA205D174500706F6B /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
-		896C60FB205D174500706F6B /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
-		896C60FC205D174500706F6B /* endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
-		896C60FF205D174500706F6B /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
-		896C6100205D174500706F6B /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
-		896C6101205D174500706F6B /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
-		896C6102205D174500706F6B /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
-		896C6103205D174500706F6B /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
 		896C6112205D178B00706F6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		896C6115205D18DE00706F6B /* QuickExcelKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickExcelKit-Prefix.pch"; sourceTree = "<group>"; };
 		896C6116205D208500706F6B /* QuickExcelReaderUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickExcelReaderUtil.h; sourceTree = "<group>"; };
@@ -124,7 +103,25 @@
 		896C6125205D44AA00706F6B /* CSVParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
 		896C6128205D4A7500706F6B /* QuickExcelKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuickExcelKit.podspec; sourceTree = "<group>"; };
 		896C6129205D4A7500706F6B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		896C612C205EB30800706F6B /* endian.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = endian.c; sourceTree = "<group>"; };
+		89787EE3205F67D8005883F1 /* endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
+		89787EE4205F67D8005883F1 /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		89787EE5205F67D8005883F1 /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
+		89787EE6205F67D8005883F1 /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
+		89787EE8205F67D8005883F1 /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
+		89787EE9205F67D8005883F1 /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
+		89787EEA205F67D8005883F1 /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
+		89787EEC205F67D8005883F1 /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
+		89787F09205F67D8005883F1 /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
+		89787F0A205F67D8005883F1 /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
+		89787F0B205F67D8005883F1 /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
+		89787F0D205F67D8005883F1 /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
+		89787F0E205F67D8005883F1 /* endian.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = endian.c; sourceTree = "<group>"; };
+		89787F10205F67D8005883F1 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		89787F4D205F68FE005883F1 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		89787F4E205F6A7B005883F1 /* iOSXLSReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSXLSReader.h; sourceTree = "<group>"; };
+		89787F4F205F6A7B005883F1 /* iOSXLSReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSXLSReader.m; sourceTree = "<group>"; };
+		89787F52205F6AB8005883F1 /* iOSXLSCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSXLSCell.h; sourceTree = "<group>"; };
+		89787F53205F6AB8005883F1 /* iOSXLSCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSXLSCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +151,7 @@
 			children = (
 				896C60E4205D0CD800706F6B /* metadata */,
 				896C5FFD205CB5B200706F6B /* QuickExcelKit */,
-				896C6008205D0A0700706F6B /* DHlibxls */,
+				89787ECC205F6698005883F1 /* iOSlibxls */,
 				896C6054205D0B7D00706F6B /* ZXLSXReader */,
 				896C5FFC205CB5B200706F6B /* Products */,
 				FE511947B3F6037A069D9AC0 /* Pods */,
@@ -181,37 +178,6 @@
 				896C6114205D17F900706F6B /* Supporting Files */,
 			);
 			path = QuickExcelKit;
-			sourceTree = "<group>";
-		};
-		896C6008205D0A0700706F6B /* DHlibxls */ = {
-			isa = PBXGroup;
-			children = (
-				896C600B205D0A0700706F6B /* config.h */,
-				896C600D205D0A0700706F6B /* DHxlsReader */,
-				896C601E205D0A0700706F6B /* libxls */,
-			);
-			path = DHlibxls;
-			sourceTree = "<group>";
-		};
-		896C600D205D0A0700706F6B /* DHxlsReader */ = {
-			isa = PBXGroup;
-			children = (
-				896C600E205D0A0700706F6B /* DHcell-Private.h */,
-				896C600F205D0A0700706F6B /* DHcell.h */,
-				896C6010205D0A0700706F6B /* DHcell.m */,
-				896C6012205D0A0700706F6B /* DHxlsReader.h */,
-				896C6013205D0A0700706F6B /* DHxlsReader.m */,
-			);
-			path = DHxlsReader;
-			sourceTree = "<group>";
-		};
-		896C601E205D0A0700706F6B /* libxls */ = {
-			isa = PBXGroup;
-			children = (
-				896C60F8205D174500706F6B /* include */,
-				896C60E7205D16E000706F6B /* src */,
-			);
-			path = libxls;
 			sourceTree = "<group>";
 		};
 		896C6054205D0B7D00706F6B /* ZXLSXReader */ = {
@@ -282,42 +248,6 @@
 			name = metadata;
 			sourceTree = "<group>";
 		};
-		896C60E7205D16E000706F6B /* src */ = {
-			isa = PBXGroup;
-			children = (
-				896C612C205EB30800706F6B /* endian.c */,
-				896C60E9205D16E000706F6B /* getopt.c */,
-				896C60EC205D16E000706F6B /* ole.c */,
-				896C60ED205D16E000706F6B /* xls.c */,
-				896C60EE205D16E000706F6B /* xls2csv.c */,
-				896C60EF205D16E000706F6B /* xlstool.c */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		896C60F8205D174500706F6B /* include */ = {
-			isa = PBXGroup;
-			children = (
-				896C60F9205D174500706F6B /* libxls */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		896C60F9205D174500706F6B /* libxls */ = {
-			isa = PBXGroup;
-			children = (
-				896C60FA205D174500706F6B /* brdb.c.h */,
-				896C60FB205D174500706F6B /* brdb.h */,
-				896C60FC205D174500706F6B /* endian.h */,
-				896C60FF205D174500706F6B /* ole.h */,
-				896C6100205D174500706F6B /* xls.h */,
-				896C6101205D174500706F6B /* xlsstruct.h */,
-				896C6102205D174500706F6B /* xlstool.h */,
-				896C6103205D174500706F6B /* xlstypes.h */,
-			);
-			path = libxls;
-			sourceTree = "<group>";
-		};
 		896C6114205D17F900706F6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +266,64 @@
 			path = CSVParser;
 			sourceTree = "<group>";
 		};
+		89787ECC205F6698005883F1 /* iOSlibxls */ = {
+			isa = PBXGroup;
+			children = (
+				89787ECD205F67D8005883F1 /* libxls */,
+				89787F4D205F68FE005883F1 /* config.h */,
+				89787F52205F6AB8005883F1 /* iOSXLSCell.h */,
+				89787F53205F6AB8005883F1 /* iOSXLSCell.m */,
+				89787F4E205F6A7B005883F1 /* iOSXLSReader.h */,
+				89787F4F205F6A7B005883F1 /* iOSXLSReader.m */,
+			);
+			path = iOSlibxls;
+			sourceTree = "<group>";
+		};
+		89787ECD205F67D8005883F1 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				89787EE1205F67D8005883F1 /* include */,
+				89787F08205F67D8005883F1 /* src */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		89787EE1205F67D8005883F1 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				89787EE2205F67D8005883F1 /* libxls */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		89787EE2205F67D8005883F1 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				89787EE3205F67D8005883F1 /* endian.h */,
+				89787EE4205F67D8005883F1 /* xlstypes.h */,
+				89787EE5205F67D8005883F1 /* xlsstruct.h */,
+				89787EE6205F67D8005883F1 /* brdb.c.h */,
+				89787EE8205F67D8005883F1 /* xlstool.h */,
+				89787EE9205F67D8005883F1 /* xls.h */,
+				89787EEA205F67D8005883F1 /* ole.h */,
+				89787EEC205F67D8005883F1 /* brdb.h */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		89787F08205F67D8005883F1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				89787F09205F67D8005883F1 /* xls.c */,
+				89787F0A205F67D8005883F1 /* xlstool.c */,
+				89787F0B205F67D8005883F1 /* ole.c */,
+				89787F0D205F67D8005883F1 /* xls2csv.c */,
+				89787F0E205F67D8005883F1 /* endian.c */,
+				89787F10205F67D8005883F1 /* getopt.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		FE511947B3F6037A069D9AC0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,32 +340,30 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896C610F205D174500706F6B /* xlstypes.h in Headers */,
 				896C60D2205D0B7D00706F6B /* ZContent.h in Headers */,
 				896C6118205D208500706F6B /* QuickExcelReaderUtil.h in Headers */,
-				896C603D205D0A0700706F6B /* config.h in Headers */,
+				89787F24205F67D8005883F1 /* brdb.c.h in Headers */,
 				896C60D9205D0B7D00706F6B /* ZBaseParser.h in Headers */,
+				89787F54205F6AB8005883F1 /* iOSXLSCell.h in Headers */,
 				896C60DB205D0B7D00706F6B /* ZContentParser.h in Headers */,
 				896C611B205D262700706F6B /* QuickExcelKitDefine.h in Headers */,
-				896C6043205D0A0700706F6B /* DHxlsReader.h in Headers */,
-				896C610D205D174500706F6B /* xlsstruct.h in Headers */,
-				896C6107205D174500706F6B /* brdb.h in Headers */,
 				896C60D1205D0B7D00706F6B /* config.h in Headers */,
+				89787F50205F6A7B005883F1 /* iOSXLSReader.h in Headers */,
+				89787F22205F67D8005883F1 /* xlstypes.h in Headers */,
 				896C6000205CB5B200706F6B /* QuickExcelKit.h in Headers */,
-				896C610B205D174500706F6B /* ole.h in Headers */,
-				896C6040205D0A0700706F6B /* DHcell.h in Headers */,
+				89787F2A205F67D8005883F1 /* brdb.h in Headers */,
 				896C60D7205D0B7D00706F6B /* ZSheetCol.h in Headers */,
-				896C610C205D174500706F6B /* xls.h in Headers */,
+				89787F28205F67D8005883F1 /* ole.h in Headers */,
 				896C60E1205D0B7D00706F6B /* ZXLSXParser.h in Headers */,
-				896C6106205D174500706F6B /* brdb.c.h in Headers */,
-				896C610E205D174500706F6B /* xlstool.h in Headers */,
+				89787F27205F67D8005883F1 /* xls.h in Headers */,
+				89787F26205F67D8005883F1 /* xlstool.h in Headers */,
 				896C60DD205D0B7D00706F6B /* ZSheetParser.h in Headers */,
-				896C603F205D0A0700706F6B /* DHcell-Private.h in Headers */,
 				896C60D5205D0B7D00706F6B /* ZSheet.h in Headers */,
+				89787F23205F67D8005883F1 /* xlsstruct.h in Headers */,
 				896C6126205D44AA00706F6B /* CSVParser.h in Headers */,
+				89787F21205F67D8005883F1 /* endian.h in Headers */,
 				896C60D4205D0B7D00706F6B /* ZPaserProtocol.h in Headers */,
 				896C60DF205D0B7D00706F6B /* ZWorkbookParser.h in Headers */,
-				896C6108205D174500706F6B /* endian.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,23 +493,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				896C6119205D208500706F6B /* QuickExcelReaderUtil.m in Sources */,
+				89787F42205F67D8005883F1 /* xls.c in Sources */,
 				896C60D3205D0B7D00706F6B /* ZContent.m in Sources */,
-				896C60F5205D16E100706F6B /* xls.c in Sources */,
-				896C60F6205D16E100706F6B /* xls2csv.c in Sources */,
-				896C60F4205D16E100706F6B /* ole.c in Sources */,
-				896C6044205D0A0700706F6B /* DHxlsReader.m in Sources */,
-				896C6041205D0A0700706F6B /* DHcell.m in Sources */,
-				896C60F1205D16E100706F6B /* getopt.c in Sources */,
 				896C60D6205D0B7D00706F6B /* ZSheet.m in Sources */,
+				89787F49205F67D8005883F1 /* getopt.c in Sources */,
 				896C60E0205D0B7D00706F6B /* ZWorkbookParser.m in Sources */,
-				896C612D205EB30900706F6B /* endian.c in Sources */,
+				89787F46205F67D8005883F1 /* xls2csv.c in Sources */,
 				896C6127205D44AA00706F6B /* CSVParser.m in Sources */,
 				896C60E2205D0B7D00706F6B /* ZXLSXParser.m in Sources */,
 				896C60DA205D0B7D00706F6B /* ZBaseParser.m in Sources */,
+				89787F43205F67D8005883F1 /* xlstool.c in Sources */,
+				89787F55205F6AB8005883F1 /* iOSXLSCell.m in Sources */,
+				89787F44205F67D8005883F1 /* ole.c in Sources */,
 				896C60DE205D0B7D00706F6B /* ZSheetParser.m in Sources */,
 				896C60DC205D0B7D00706F6B /* ZContentParser.m in Sources */,
+				89787F51205F6A7B005883F1 /* iOSXLSReader.m in Sources */,
 				896C60D8205D0B7D00706F6B /* ZSheetCol.m in Sources */,
-				896C60F7205D16E100706F6B /* xlstool.c in Sources */,
+				89787F47205F67D8005883F1 /* endian.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,14 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					./DHlibxls/libxls,
-					./DHlibxls/libxls/include,
-					./DHlibxls/libxls/include/libxls,
-					./ZXLSXReader,
-					./ZXLSXReader/xmlParser,
-					./ZXLSXReader/xmlParser/models,
-				);
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -639,14 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					./DHlibxls/libxls,
-					./DHlibxls/libxls/include,
-					./DHlibxls/libxls/include/libxls,
-					./ZXLSXReader,
-					./ZXLSXReader/xmlParser,
-					./ZXLSXReader/xmlParser/models,
-				);
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -668,6 +640,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QuickExcelKit/Supporting Files/QuickExcelKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./iOSlibxls,
+					./iOSlibxls/libxls,
+					./iOSlibxls/libxls/include,
+					./ZXLSXReader,
+					./ZXLSXReader/xmlParser,
+					./ZXLSXReader/xmlParser/models,
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/QuickExcelKit/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -691,6 +671,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QuickExcelKit/Supporting Files/QuickExcelKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./iOSlibxls,
+					./iOSlibxls/libxls,
+					./iOSlibxls/libxls/include,
+					./ZXLSXReader,
+					./ZXLSXReader/xmlParser,
+					./ZXLSXReader/xmlParser/models,
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/QuickExcelKit/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

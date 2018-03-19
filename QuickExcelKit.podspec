@@ -19,19 +19,33 @@ Pod::Spec.new do |s|
 #s.preserve_paths   = ''
     s.source_files     = 'QuickExcelKit/QuickExcelKit.h'
     s.prefix_header_file = 'QuickExcelKit/Supporting Files/QuickExcelKit-Prefix.pch'
-    s.dependency 'SSZipArchive'
+
     s.default_subspec = 'QuickExcelReaderUtil'
-    s.header_mappings_dir = './'
-    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => './DHlibxls/libxls ./DHlibxls/libxls/include ./ZXLSXReader ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models'}
+
+    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC'}
+
+    s.subspec 'ZXLSXParser' do |SS|
+       ss.source files = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
+       ss.public_headerfiles = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/ZXLSXParser.h'
+       ss.dependency 'SSZipArchive'
+    @end
+
+    s.subspec 'iOSlibxls' do |SS|
+        ss.source files = 'iOSlibxls/*.{h,m}', 'iOSlibxls/libxls/include/libxls/*.{h}', 'iOSlibxls/src/*.{c}'
+        ss.public_headerfiles = 'iOSlibxls/libxls/include/libxls/xls.h'
+        ss.header_dir = 'iOSlibxls'
+        ss.header_mappings_dir = 'iOSlibxls/libxls/include'
+        ss.pod_target_xcconfig = {
+            'HEADER_SEARCH_PATHS' => '$(inherited) ./iOSlibxls ./iOSlibxls/libxls/incude'
+        }
+        ss.dependency 'QuickExcelKit/ZXLSXParser'
+    @end
 
     s.subspec 'QuickExcelReaderUtil' do |ss|
-        ss.source_files = 'QuickExcelKit/QuickExcelKit.h', 'QuickExcelKit/QuickExcelKitDefine.h', 'QuickExcelKit/QuickExcelReaderUtil.h', 'QuickExcelKit/QuickExcelReaderUtil.m', 'QuickExcelKit/CSVParser', 'QuickExcelKit/Supporting Files', 'DHlibxls/*.{h}', 'DHlibxls/DHxlsReader/*.{h,m}', 'DHlibxls/libxls/include/libxls/*.{h}', 'DHlibxls/libxls/src/*.{c}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
-        ss.exclude_files = 'DHlibxls/libxls/src/endian.c'
-        ss.public_header_files = 'QuickExcelKit/QuickExcelKit.h','ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/ZContent.h', 'QuickExcelKit/QuickExcelReaderUtil.h'
-        ss.pod_target_xcconfig = {
-        'OTHER_LDFLAGS' => '-lObjC',
-        'HEADER_SEARCH_PATHS' => '$(inherited) ./DHlibxls/libxls ./DHlibxls/libxls/include ./ZXLSXReader ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser ./ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models'
-        }
+        ss.source_files = 'QuickExcelKit/*.{h,m}', 'QuickExcelKit/CSVParser/*.{h,m}', 'QuickExcelKit/Supporting Files/*.{pch}'
+        ss.public_header_files = 'QuickExcelKit/QuickExcelReaderUtil.h'
+        ss.dependency 'QuickExcelKit/ZXLSXParser'
+        ss.dependency 'QuickExcelKit/iOSlibxls'
     end
 
 end
