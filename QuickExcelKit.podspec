@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
         ss.public_header_files = 'iOSlibxls/iOSXLSReader.h','iOSlibxls/iOSXLSCell.h'
         ss.header_mappings_dir = 'iOSlibxls/**'
         ss.pod_target_xcconfig = {
-            'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/iOSlibxls/**'
+            'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/Headers/Private/**'
         }
     end
 
