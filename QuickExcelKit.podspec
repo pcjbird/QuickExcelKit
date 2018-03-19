@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'iOSlibxls' do |ss|
-        ss.source_files = 'iOSlibxls/*.{h,m}', 'iOSlibxls/libxls/include/libxls/*.{h}', 'iOSlibxls/src/*.{c}'
+        ss.source_files = 'iOSlibxls/*.{h,m}', 'iOSlibxls/libxls/include/libxls/*.{h}', 'iOSlibxls/libxls/src/*.{c}'
         ss.public_header_files = 'iOSlibxls/iOSXLSReader.h','iOSlibxls/iOSXLSCell.h'
         ss.header_mappings_dir = '.'
         ss.pod_target_xcconfig = {
