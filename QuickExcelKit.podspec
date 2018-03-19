@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
     s.default_subspec = 'QuickExcelReaderUtil'
 
-    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC'}
+    s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC -liconv'}
 
     s.subspec 'ZXLSXParser' do |ss|
        ss.source_files = 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/*.{h,m}', 'ZXLSXReader/ZXLSXReader/ZXLSXParser/xmlParser/models/*.{h,m}'
@@ -35,6 +35,7 @@ Pod::Spec.new do |s|
         ss.public_header_files = 'iOSlibxls/iOSXLSReader.h','iOSlibxls/iOSXLSCell.h'
         ss.header_mappings_dir = '.'
         ss.pod_target_xcconfig = {
+            'OTHER_LDFLAGS' => '-lObjC -liconv',
             'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/QuickExcelKit/iOSlibxls/** ${PODS_ROOT}/QuickExcelKit/iOSlibxls/libxls/include/**'
         }
     end
