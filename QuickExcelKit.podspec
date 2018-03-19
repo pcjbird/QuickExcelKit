@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
     s.frameworks       = 'Foundation', 'UIKit'
 #s.preserve_paths   = ''
     s.source_files     = 'QuickExcelKit/QuickExcelKit.h'
+    s.public_header_files = 'QuickExcelKit/QuickExcelKit.h'
     s.prefix_header_file = 'QuickExcelKit/Supporting Files/QuickExcelKit-Prefix.pch'
 
     s.default_subspec = 'QuickExcelReaderUtil'
