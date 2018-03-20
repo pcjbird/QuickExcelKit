@@ -9,6 +9,14 @@
 # QuickExcelKit
 ### A great & strong microsoft excel parser for iOS, support csv/xls/xlsx format. 一款微软 Excel 文件解析器，支持 csv/xls/xlsx 格式。
 
+##  安装 / Installation
+
+方法一：`QuickExcelKit` is available through CocoaPods. To install it, simply add the following line to your Podfile:
+
+```
+pod 'QuickExcelKit'
+```
+
 ## 关注我们 / Follow us
   
 <a href="https://itunes.apple.com/cn/app/iclock-一款满足-挑剔-的翻页时钟与任务闹钟/id1128196970?pt=117947806&ct=com.github.pcjbird.QuickWebViewController&mt=8"><img src="https://github.com/pcjbird/AssetsExtractor/raw/master/iClock.gif" width="400" title="iClock - 一款满足“挑剔”的翻页时钟与任务闹钟"></a>
