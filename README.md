@@ -4,7 +4,10 @@
 [![Pod Platform](http://img.shields.io/cocoapods/p/QuickExcelKit.svg?style=flat)](http://cocoadocs.org/docsets/QuickExcelKit/)
 [![Pod License](http://img.shields.io/cocoapods/l/QuickExcelKit.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![CocoaPods](https://img.shields.io/cocoapods/at/QuickExcelKit.svg)](https://github.com/pcjbird/QuickExcelKit)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/QuickExcelKit.svg)](https://github.com/pcjbird/QuickExcelKit)
 [![GitHub release](https://img.shields.io/github/release/pcjbird/QuickExcelKit.svg)](https://github.com/pcjbird/QuickExcelKit/releases)
+[![GitHub release](https://img.shields.io/github/release-date/pcjbird/QuickExcelKit.svg)](https://github.com/pcjbird/QuickExcelKit/releases)
+[![Website](https://img.shields.io/website-pcjbird-down-green-red/https/shields.io.svg?label=author)](https://pcjbird.github.io)
 
 # QuickExcelKit
 ### A great & strong microsoft excel parser for iOS, support csv/xls/xlsx format. 一款微软 Excel 文件解析器，支持 csv/xls/xlsx 格式。
